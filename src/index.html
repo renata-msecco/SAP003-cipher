@@ -5,10 +5,23 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+      <h1>Cifra de Cesar</h1>
+       <form>
+      <p>
+      <input type="text" placeholder="Digite sua mensagem" id="message"/>
+      </p>
+      <p>
+      <input type="number" placeholder="Digite a Chave" id="offset"/>
+      </p>
+      <p>
+      <input type="submit" id="btn-encode"value="Cifrar" onclick="cliquecifra ()"/> 
+      <input type="submit" id="btn-decode"value="Decifrar" onclick="cliquedecifra ()"/>
+      </p>
+      </form>
+      <p id="result">
+      </p>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
