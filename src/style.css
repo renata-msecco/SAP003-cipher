@@ -1,1 +1,13 @@
+main h1 {
+    font-size: 40px; 
+    font-family: Helvetica;
+   background-color:#e6e4e6ec;
+   color:#719430;
+   text-align: center;
+  }
 
+
+
+html{
+  text-align: center
+}
