@@ -2,29 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>SOS AWÁ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
-      <main>
-      <h1>Cifra de Cesar</h1>
-      <img src="./folha verde.jpg" alt="folha verde"/>
-    </main>
-       <form>
-      <p>
-      <input type="text" placeholder="Digite sua mensagem" id="message"/>
-      </p>
-      <p>
-      <input type="number" placeholder="Digite a Chave" id="offset"/>
-      </p>
-      <p>
-      <input class= "button" type="submit" id="btn-encode"value="Cifrar" /> 
-      <input class= "button" type="submit" id="btn-decode"value="Decifrar"/>
-      </p>
-      </form>
-      <p id="result">
-      </p>
+    <body>
+    <div class= "geral">
+      <h1>SOS AWÁ</h1>
+      <!--<img src="./folha verde.jpg" alt="folha verde"/>-->
+        <div class= "retangulo1">
+          <p><input class= "retangulo" type="text" placeholder="Digite sua mensagem" id="message"/></p>
+          <input class= "button" type="submit" id="btn-encode"value="Cifrar" />
+          <input class= "button" type="submit" id="btn-decode"value="Decifrar"/>
+          <p><input class="deslocamento" type="number" placeholder="Digite a Chave" id="offset"/></p>
+        </div>
+        <div class="box_resultado">
+          <p> Sua mensagem é:</p>
+          <textarea class="testebox" id="result"> </textarea> 
+        </div> 
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
