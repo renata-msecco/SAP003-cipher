@@ -6,14 +6,6 @@
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Considerações Gerais](#3-Considerações-gerais)
 * [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Avaliação](#8-avaliação)
-* [9. Guias, dicas e leituras
-  complementares](#9-guias-dicas-e-leituras-complementares)
-* [10. Checklist](#10-checklist)
 
 ***
 
@@ -31,11 +23,20 @@ batalha.
 
 ## 2. Resumo do projeto
 
-O projeto foi executado com a finalidade de cifrar e decifrar uma mensagem, através de uma chave de deslocamento. O app será a interface entre ONGs e populações da floresta que atuam como guardiões do terrirório amazônico, uma vez que, essas são as populações mais afetadas pela ausência do poder público na região. 
-Pensado a partir da repercursão mundial do dia do fogo (resultado de sucessivas queimadas no território amazônico em 2019) e o desmonte das políticas públicas do governo brasileiro para preservação ambiental, desta forma o app permite ao usuário denunciar a organizações parceiras(Ongs) irregularidades como, queimadas, exploração ilegal de minérios e madeira e tráfico de animais.
-As cores escolhidas foram verde que representa a floresta e alaranjado que representa a terra. O nome escolhido foi SOS Awá, segundo a organização Survival, é o povo indigena mais ameaçado de extinção no Brasil. 
+O projeto foi executado com a finalidade de cifrar e decifrar uma mensagem, através de uma chave de deslocamento. Projetado para atender ONGs de proteção da região amazônica brasileira, denunciando queimadas e outras ações ilegais, através de mensagens criptografadas.
+## Utilização:
+O app será a interface entre ONGs e populações da floresta que atuam como guardiões do terrirório amazônico, uma vez que, essas são as populações mais afetadas pela ausência do poder público na região. As mensagens criptografadas garantem menor risco a segurança do usuário. 
+## Motivação:
+Pensado a partir da repercursão mundial do dia do fogo (resultado de sucessivas queimadas no território amazônico em 2019,a maior nos últimos 9 anos) e o desmonte das políticas públicas do governo brasileiro para preservação ambiental, desta forma o app permite ao usuário denunciar a organizações parceiras(Ongs) novas queimadas.
+## Cores:
+As cores escolhidas foram constrastantes entre verde e alaranjado;
+## Nome da aplicação:
+ O nome escolhido foi SOS Awá, segundo a organização Survival, é o povo indigena mais ameaçado de extinção no Brasil. 
+
 ## 3. Condições Gerais
-index.html:
-index. js:
-cipher.js:
-style.css:
+
+Html: Construido a partir de três divs principais que permitem que ao usuário escreva uma mensagem, escolha uma chave de deslocamento e clique em cifrar ou decifrar;
+JavaScript: O cipher.js contêm formulas para cifrar e decifrar mensagem e condicionais para receber o alfabeto maiusculo e minusculo, bem como espeços e números;
+CSS: No CSS, foi utilizado classes para atribuir estilo, este que por sua vez, foi pensado para conferir uma estéticaa leve ao usuário.
+
+![Print tela](printdatela.jpg)
