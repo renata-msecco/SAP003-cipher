@@ -4,8 +4,6 @@ window.cipher = {
 };
 
 function encode(deslocamento, mensagem) {
-//alert(mensagem + offset)
-//return(message + offset)
   let encodeMensagem ="";
   for (let i=0; i <mensagem.length; i++) {
     if (mensagem.charCodeAt(i)>=65 && mensagem.charCodeAt (i) <=90) {
@@ -25,8 +23,6 @@ function encode(deslocamento, mensagem) {
 }
 
 function decode(deslocamento, mensagem) {
-  //alert(mensagem + offset)
-  //return(message + offset)
   let decodeMensagem = "";
   for (let i=0; i <mensagem.length; i++) {
     if (mensagem.charCodeAt(i)>=65 && mensagem.charCodeAt (i) <=90) {

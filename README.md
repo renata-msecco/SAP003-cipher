@@ -37,6 +37,6 @@ As cores escolhidas foram constrastantes entre verde e alaranjado;
 
 Html: Construido a partir de três divs principais que permitem que ao usuário escreva uma mensagem, escolha uma chave de deslocamento e clique em cifrar ou decifrar;
 JavaScript: O cipher.js contêm formulas para cifrar e decifrar mensagem e condicionais para receber o alfabeto maiusculo e minusculo, bem como espeços e números;
-CSS: No CSS, foi utilizado classes para atribuir estilo, este que por sua vez, foi pensado para conferir uma estéticaa leve ao usuário.
+CSS: No CSS, foi utilizado classes para atribuir estilo, este que por sua vez, foi pensado para conferir uma estética leve ao usuário.
 
-![Print tela](printdatela.jpg)
+![Print tela](src/printdatela.jpg)
