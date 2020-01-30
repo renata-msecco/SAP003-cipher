@@ -1,25 +1,19 @@
-document.getElementById("btn-encode").addEventListener("click", cliquecifra);
 
-function cliquecifra()
-{
-  event.preventDefault();
-  let mensagem= document.getElementById("message").value;
-  let deslocamento= parseInt (document.getElementById("offset").value);
-  let encodeMensagem = window.cipher.encode(deslocamento, mensagem);
+const buttonCode = document.getElementById("btn-encode");
+const buttonDecode = document.getElementById("btn-decode");
+const message = document.getElementById("message");
+const offSet = document.getElementById("offset");
 
-  document.getElementById("result").innerHTML = `${encodeMensagem}` ;
+buttonCode.addEventListener("click", () => {
+  const encodeText = window.cipher.encode(+offSet.value, message.value);
+  showMessage(encodeText)
+});
+
+buttonDecode.addEventListener("click", () => {
+  const decodeText = window.cipher.decode(+offSet.value, message.value);
+  showMessage(decodeText)
+});
+
+const showMessage = (message) => {
+  document.getElementById("result").innerHTML = message;
 }
-
-document.getElementById("btn-decode").addEventListener("click", cliquedecifra);
-
-function cliquedecifra()
-{
-  event.preventDefault();
-  let mensagem= document.getElementById("message").value;
-  let deslocamento= parseInt (document.getElementById("offset").value);
-  let decodeMensagem = window.cipher.decode(deslocamento, mensagem);
-
-  document.getElementById("result").innerHTML = `${decodeMensagem}` ;
-
-}
-cliquedecifra();

@@ -3,41 +3,39 @@ window.cipher = {
   decode: decode
 };
 
-function encode(deslocamento, mensagem) {
-  let encodeMensagem ="";
-  for (let i=0; i <mensagem.length; i++) {
-    if (mensagem.charCodeAt(i)>=65 && mensagem.charCodeAt (i) <=90) {
-      let formula =((mensagem.charCodeAt(i) - 65 + deslocamento)%26)+65;
-      encodeMensagem += String.fromCharCode(formula);
+function encode(move, message) {
+  let encodeMessage = "";
+  for (let i in message) {
+    if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
+      let formula = ((message.charCodeAt(i) - 65 + move) % 26) + 65;
+      encodeMessage += String.fromCharCode(formula);
     }
-    else if (mensagem.charCodeAt(i)>=97 && mensagem.charCodeAt (i)<=122) {
-      let formula =((mensagem.charCodeAt(i) - 97 + deslocamento)%26)+97;
-      encodeMensagem += String.fromCharCode(formula);  
+    else if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
+      let formula = ((message.charCodeAt(i) - 97 + move) % 26) + 97;
+      encodeMessage += String.fromCharCode(formula);
     }
     else {
-      let formula = mensagem.charCodeAt(i);
-      encodeMensagem += String.fromCharCode(formula);   
+      encodeMessage += message[i];
     }
   }
-  return encodeMensagem;
+  return encodeMessage;
 }
 
-function decode(deslocamento, mensagem) {
-  let decodeMensagem = "";
-  for (let i=0; i <mensagem.length; i++) {
-    if (mensagem.charCodeAt(i)>=65 && mensagem.charCodeAt (i) <=90) {
-      let formula =((mensagem.charCodeAt(i) - 90 - deslocamento)%26)+90;
-      decodeMensagem += String.fromCharCode(formula);
+function decode(move, message) {
+  let decodeMessage = "";
+  for (let i in message) {
+    if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
+      let formula = ((message.charCodeAt(i) - 90 - move) % 26) + 90;
+      decodeMessage += String.fromCharCode(formula);
     }
-    else if (mensagem.charCodeAt(i)>=97 && mensagem.charCodeAt (i)<=122) {
-      let formula =((mensagem.charCodeAt(i) - 122 - deslocamento)%26)+122;
-      decodeMensagem += String.fromCharCode(formula);  
-    } 
+    else if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
+      let formula = ((message.charCodeAt(i) - 122 - move) % 26) + 122;
+      decodeMessage += String.fromCharCode(formula);
+    }
     else {
-      let formula = mensagem.charCodeAt(i);
-      decodeMensagem += String.fromCharCode(formula);   
+      let formula = message.charCodeAt(i);
+      decodeMessage += String.fromCharCode(formula);
     }
   }
-  return decodeMensagem;
+  return decodeMessage;
 }
-  

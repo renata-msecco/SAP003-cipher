@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>SOS AWÁ</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-    <body>
-    <div class= "geral">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="geral">
+    <header>
       <h1>SOS AWÁ</h1>
-        <div class= "retangulo1">
-          <p><input class= "retangulo" type="text" placeholder="Digite sua mensagem" id="message"/></p>
-          <input class= "button" type="submit" id="btn-encode"value="Cifrar" />
-          <input class= "button" type="submit" id="btn-decode"value="Decifrar"/>
-          <p><input class="deslocamento" type="number" placeholder="Chave" id="offset"/></p>
-        </div>
-        <div class="box_resultado">
-          <p> Sua mensagem é:</p>
-          <textarea class="testebox" id="result"> </textarea> 
-        </div> 
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    </header>
+    <section id="retangulo1">
+      <p><input class="retangulo" type="text" placeholder="Digite sua mensagem" id="message" /></p>
+      <input class="button" type="submit" id="btn-encode" value="Cifrar" />
+      <input class="button" type="submit" id="btn-decode" value="Decifrar" />
+      <p><input class="deslocamento" type="number" placeholder="Chave" id="offset" /></p>
+      </div>
+      <div class="box_resultado">
+        <h3> Sua mensagem é:</h3>
+        <textarea class="testebox" id="result"> </textarea>
+      </div>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+    </section>
+  </main>
+</body>
+
 </html>
