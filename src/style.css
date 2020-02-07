@@ -1,8 +1,7 @@
 body {
-  background-image: url(teia_folha.png);
+  background-image: url(../imagem/teia_folha.png); 
   background-repeat: no-repeat;
   background-size: 150%;
-  background-color: white;
   padding: -1px 50px 50px 50px;
   width: 600px;
   height: 500px;
@@ -28,15 +27,9 @@ h1{
     color: #BF571B;
  } 
 
-.retangulo1 {
-  text-align: center;
-  position: relative;
-  left: 60%
-}
-
-html{
-  background-color:white;
-}
+ html{ 
+background-color:white; 
+} 
 
 .button {
 font-size: 20px; 
